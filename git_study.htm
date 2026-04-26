@@ -36,11 +36,22 @@ git add 파일명 또는 폴더명
 * 스테이징 영역에 추가된 파일은 수정 여부에 따라 Unmodified(수정되지 않은) 상태와 Modified(수정된) 상태로 분류됨
 
 * 스테이징 영역에 있는 파일을 커밋 하는 방법
-git commit (엔터 --> i 입력 --> 커밋 문구 입력 --> esc키 --> :wq 입력 --> 엔터)
+git commit (엔터 --> i 입력 --> 커밋 메시지 입력 --> esc키 --> :wq 입력 --> 엔터)
+git commit --amend --no-edit --> 커밋 메시지 수정 없이 커밋
 
 * 현재 작업하는 브랜치의 커밋 로그 확인 방법
 git log
 git log -p --> 파일 단위에서 변경 내용을 보여줌
+git log -3 --> 최근 커밋 로그 3개를 보여줌
+
+* 커밋 메시지 수정 방법
+git commit --amend
+
+* 커밋 후에 저자를 다시 수정하는 방법
+git commit --amend --author "username<email>"
+
+* 커밋에 저장된 파일을 원격 저장소(깃허브)에 등록 방법
+git push {저장소} {브렌치}
 
 
 
